@@ -1,29 +1,185 @@
-05-04-2016 14:19:03 | Logs Cleared: by User ID - 1 
-05-04-2016 14:20:08 | Login: daniel logged in 
-05-04-2016 14:20:17 | Upload: daniel, ID - 1 added a new image 
-05-04-2016 14:21:08 | Upload: daniel, ID - 1 added a new image 
-05-04-2016 15:05:17 | Upload: daniel, ID - 1 added profile image 
-05-04-2016 15:05:17 | sign up: testt was added as user 
-05-04-2016 15:12:01 | Upload: daniel, ID - 1 added profile image 
-05-04-2016 15:12:01 | sign up: user was added as user 
-05-04-2016 15:16:16 | Upload: daniel, ID - 1 added profile image 
-05-04-2016 15:16:16 | sign up: test was added as user 
-05-04-2016 15:19:57 | Upload: daniel, ID - 1 added a new image 
-05-04-2016 15:20:15 | Upload: daniel, ID - 1 added a new image 
-05-04-2016 16:42:32 | Upload: daniel, ID - 1 added profile image 
-05-04-2016 16:42:32 | sign up: test was added as an Admin 
-05-04-2016 16:44:13 | Upload: daniel, ID - 1 added profile image 
-05-04-2016 16:44:13 | sign up: l was added as an Admin 
-05-04-2016 20:03:13 | Upload: daniel, ID - 1 added a new image 
-05-04-2016 20:04:33 | Upload: daniel, ID - 1 added a new image 
-05-04-2016 20:23:52 | Upload: daniel, ID - 1 added 3 new images. 
-05-04-2016 20:26:18 | Upload: daniel, ID - 1 added profile image 
-05-04-2016 20:26:18 | sign up: andy was added as user 
-05-04-2016 20:36:23 | Upload: last, ID - 1 added profile image 
-05-04-2016 20:36:23 | sign up: last was added as user 
-06-04-2016 10:10:38 | Login: daniel logged in 
-06-04-2016 10:11:18 | Upload: daniel, ID - 1 added a new image 
-06-04-2016 10:12:17 | Upload: andyj, ID - 1 added profile image 
-06-04-2016 10:12:17 | sign up: andyj was added as an Admin 
-06-04-2016 10:13:41 | Login: andyj logged in 
-06-04-2016 10:14:03 | Upload: andyj, ID - 2 added a new image 
+08-04-2016 16:56:41 | Logs Cleared: by User ID - 1 
+08-04-2016 17:09:08 | Upload: usertest, ID - 14 added profile image 
+08-04-2016 17:09:08 | sign up: usertest was added as user 
+08-04-2016 17:11:51 | Login: daniel logged in 
+08-04-2016 17:16:49 | Upload: daniel, ID - 1 added 3 new images. 
+08-04-2016 17:46:10 | Upload: joe, ID - 2 added profile image 
+08-04-2016 17:46:10 | sign up: joe was added as an Admin 
+08-04-2016 17:59:39 | Upload: sovavy, ID - 3 added profile image 
+08-04-2016 17:59:39 | sign up: sovavy was added as user 
+08-04-2016 21:02:48 | Login: joe logged in 
+08-04-2016 21:19:01 | Upload: sovavy, ID - 3 had a failed upload. 
+08-04-2016 21:19:01 | sign up: sovavy was added as user 
+08-04-2016 21:25:28 | Upload: sovavy, ID - 3 had a failed upload. 
+08-04-2016 21:25:28 | sign up: sovavy was added as user 
+08-04-2016 21:26:29 | Upload: joe, ID - 2 had a failed upload. 
+08-04-2016 21:26:29 | sign up: joe was added as an Admin 
+08-04-2016 21:27:34 | Upload: last, ID - 4 added profile image 
+08-04-2016 21:27:34 | sign up: last was added as user 
+08-04-2016 21:30:14 | Upload: last, ID - 4 had a failed upload. 
+08-04-2016 21:30:14 | sign up: last was added as user 
+08-04-2016 21:39:53 | Upload: a, ID - 5 added profile image 
+08-04-2016 21:39:53 | sign up: a was added as user 
+08-04-2016 21:41:55 | Upload: a, ID - 6 added profile image 
+08-04-2016 21:41:55 | sign up: a was added as user 
+08-04-2016 21:46:33 | Upload: s, ID - 7 added profile image 
+08-04-2016 21:46:33 | sign up: s was added as user 
+08-04-2016 21:49:06 | Upload: s, ID - 7 had a failed upload. 
+08-04-2016 21:49:06 | sign up: s was added as user 
+08-04-2016 21:52:37 | Upload: a, ID - 8 added profile image 
+08-04-2016 21:52:37 | sign up: a was added as user 
+08-04-2016 21:54:45 | Upload: asdnm, ID - 9 added profile image 
+08-04-2016 21:54:45 | sign up: asdnm was added as user 
+08-04-2016 21:57:50 | Upload: ksm,, ID - 10 added profile image 
+08-04-2016 21:57:50 | sign up: ksm, was added as user 
+08-04-2016 21:59:55 | Upload: joe, ID - 2 added a new image 
+08-04-2016 22:00:23 | Upload: abeekku, ID - 11 added profile image 
+08-04-2016 22:00:23 | sign up: abeekku was added as user 
+08-04-2016 22:08:32 | Upload: alks, ID - 12 added profile image 
+08-04-2016 22:08:32 | sign up: alks was added as user 
+08-04-2016 22:44:22 | Upload: final, ID - 13 added profile image 
+08-04-2016 22:44:22 | sign up: final was added as user 
+08-04-2016 22:47:02 | Upload: final, ID - 13 added profile image 
+08-04-2016 22:47:02 | sign up: final was added as user 
+08-04-2016 22:47:41 | Upload: final, ID - 13 added profile image 
+08-04-2016 22:47:41 | sign up: final was added as user 
+08-04-2016 22:48:55 | Upload: final, ID - 13 added profile image 
+08-04-2016 22:48:55 | sign up: final was added as user 
+08-04-2016 22:49:20 | Upload: last final, ID - 13 added profile image 
+08-04-2016 22:49:20 | sign up: last final was added as an Admin 
+08-04-2016 22:50:18 | Login: daniel logged in 
+08-04-2016 22:53:11 | Upload: daniel, ID - 1 added profile image 
+08-04-2016 22:53:11 | sign up: daniel was added as an Admin 
+08-04-2016 23:00:22 | Login: daniel logged in 
+08-04-2016 23:01:47 | Upload: Toness, ID - 2 added profile image 
+08-04-2016 23:01:47 | sign up: Toness was added as an Admin 
+08-04-2016 23:53:52 | Upload: daniel, ID - 1 added 3 new images. 
+08-04-2016 23:58:12 | Upload: daniel, ID - 1 added 3 new images. 
+09-04-2016 11:23:20 | Login: daniel logged in 
+09-04-2016 11:24:02 | Upload: daniel, ID - 1 added 6 new images. 
+09-04-2016 11:49:51 | Login: daniel logged in 
+09-04-2016 11:53:28 | Login: daniel logged in 
+09-04-2016 11:55:23 | Upload: ugin, ID - 3 added profile image 
+09-04-2016 11:55:23 | sign up: ugin was added as user 
+09-04-2016 11:56:17 | Upload: ugin, ID - 3 added profile image 
+09-04-2016 11:56:17 | sign up: ugin was added as user 
+09-04-2016 11:56:51 | Upload: ugin, ID - 3 added profile image 
+09-04-2016 11:56:51 | sign up: ugin was added as user 
+09-04-2016 11:58:17 | Upload: Toness, ID - 2 added profile image 
+09-04-2016 11:58:17 | sign up: Toness was added as an Admin 
+09-04-2016 12:04:33 | Upload: ugin, ID - 3 added profile image 
+09-04-2016 12:04:33 | sign up: ugin was added as user 
+09-04-2016 12:05:57 | Upload: daniel, ID - 1 added profile image 
+09-04-2016 12:05:57 | sign up: daniel was added as an Admin 
+09-04-2016 12:06:08 | Upload: daniel, ID - 1 had a failed upload. 
+09-04-2016 12:06:08 | sign up: daniel was added as an Admin 
+09-04-2016 12:06:44 | Upload: daniel, ID - 1 added profile image 
+09-04-2016 12:06:44 | sign up: daniel was added as an Admin 
+09-04-2016 12:21:39 | Upload: ugin, ID - 3 added profile image 
+09-04-2016 12:21:39 | sign up: ugin was added as user 
+09-04-2016 12:42:58 | Upload: daniel, ID - 1 added a new image 
+09-04-2016 14:19:06 | Upload: daniel, ID - 1 added a new image 
+09-04-2016 19:43:07 | Login: daniel logged in 
+10-04-2016 23:02:29 | Login: daniel logged in 
+11-04-2016 00:04:08 | Upload: daniel, ID - 1 added profile image 
+11-04-2016 00:04:08 | sign up: daniel was added as an Admin 
+11-04-2016 09:36:11 | Login: daniel logged in 
+11-04-2016 09:36:44 | Delete: ID - 1 removed image doris 20150216_185727.jpg 
+11-04-2016 16:28:04 | Upload: daniel, ID - 1 added 5 new images. 
+11-04-2016 17:00:37 | Delete: ID - 1 removed image Psychedelic.jpg 
+11-04-2016 17:00:38 | Delete: ID - 1 removed image trees_green_entrance_stairs_planet_61651_1366x768. 
+11-04-2016 17:00:39 | Delete: ID - 1 removed image IMG_20141221_113549.jpg 
+11-04-2016 17:00:40 | Delete: ID - 1 removed image space_earth_planets_96790_1366x768.jpg 
+11-04-2016 17:00:40 | Delete: ID - 1 removed image vlcsnap-2015-12-20-13h50m17s212.png 
+11-04-2016 17:00:41 | Delete: ID - 1 removed image 233546373686.jpg 
+11-04-2016 17:00:42 | Delete: ID - 1 removed image IMG-20141204-WA0011.jpg 
+11-04-2016 17:00:44 | Delete: ID - 1 removed image 233278208335.jpg 
+11-04-2016 17:00:55 | Delete: ID - 1 removed image planet_clouds_light_star_94996_1366x768.jpg 
+11-04-2016 17:13:47 | Upload: daniel, ID - 1 added profile image 
+11-04-2016 17:13:47 | sign up: daniel was added as an Admin 
+11-04-2016 17:20:01 | Upload: Toness, ID - 2 added profile image 
+11-04-2016 17:20:01 | sign up: Toness was added as an Admin 
+11-04-2016 17:20:18 | Upload: ugin, ID - 3 added profile image 
+11-04-2016 17:20:18 | sign up: ugin was added as user 
+11-04-2016 17:21:23 | Upload: daniel, ID - 1 added a new image 
+11-04-2016 21:39:53 | Login: daniel logged in 
+11-04-2016 21:43:08 | Delete: ID - 1 removed image 20150310_121030.jpg 
+11-04-2016 21:43:10 | Delete: ID - 1 removed image space_earth_planets_96790_1366x768.jpg 
+11-04-2016 21:43:13 | Delete: ID - 1 removed image 537948_539620572797233_198014637_n.jpg 
+11-04-2016 21:43:28 | Upload: daniel, ID - 1 added 3 new images. 
+11-04-2016 22:02:15 | Rename: ID - 1 tried to rename image some text. FAiled Attempt! 
+11-04-2016 22:46:25 | Rename: ID - 1 tried to rename image some text22. FAiled Attempt! 
+11-04-2016 22:46:30 | Rename: ID - 1 tried to rename image some text223oiui3o. FAiled Attempt! 
+11-04-2016 22:46:38 | Rename: ID - 1 tried to rename image some text223oiui3osjkdskjsn. FAiled Attempt! 
+11-04-2016 22:46:59 | Rename: ID - 1 tried to rename image lorem  ipsum . FAiled Attempt! 
+11-04-2016 22:50:31 | Rename: ID - 1 tried to rename image lorem  ipsum sandi. FAiled Attempt! 
+11-04-2016 22:50:52 | Rename: ID - 1 tried to rename image lady abstract. FAiled Attempt! 
+11-04-2016 23:24:28 | Rename: ID - 1 renamed image lorem  ipsum  
+11-04-2016 23:24:41 | Rename: ID - 1 renamed image lorem  ipsum  laravel 
+11-04-2016 23:26:22 | Rename: ID - 1 renamed image linux debian 
+12-04-2016 10:03:53 | Upload: daniel, ID - 1 added profile image 
+12-04-2016 10:03:53 | sign up: daniel was added as an Admin 
+13-04-2016 10:21:29 | Upload: daniel, ID - 1 added a new image 
+13-04-2016 10:21:47 | Upload: daniel, ID - 1 added a new image 
+13-04-2016 10:34:15 | Upload: daniel, ID - 1 added a new image 
+13-04-2016 10:35:55 | Upload: daniel, ID - 1 added 9 new images. 
+13-04-2016 11:12:33 | Upload: daniel, ID - 1 added a new image 
+13-04-2016 11:13:06 | Delete: ID - 1 removed image 537948_539620572797233_198014637_n.jpg 
+13-04-2016 11:14:34 | Upload: daniel, ID - 1 added a new image 
+13-04-2016 11:16:17 | Upload: daniel, ID - 1 added a new image 
+13-04-2016 11:17:15 | Upload: daniel, ID - 1 added 6 new images. 
+13-04-2016 11:22:43 | Delete: ID - 1 removed image CWP -38).jpg 
+13-04-2016 12:12:15 | Upload: daniel, ID - 3 added profile image 
+13-04-2016 12:12:15 | sign up: daniel was added as an Admin 
+13-04-2016 12:15:02 | Upload: , ID - 1 added a new image 
+13-04-2016 12:15:57 | Delete: ID - 1 removed image CWP -58).jpg 
+13-04-2016 12:15:59 | Delete: ID - 1 removed image CWP -43).jpg 
+13-04-2016 12:16:00 | Delete: ID - 1 removed image 1 -145-.jpg 
+13-04-2016 12:16:01 | Delete: ID - 1 removed image planet_clouds_light_star 
+13-04-2016 12:16:03 | Delete: ID - 1 removed image 1000277_539620492797241_884961103_n.jpg 
+13-04-2016 12:16:04 | Delete: ID - 1 removed image 1391669_539620432797247_1823617167_n.jpg 
+13-04-2016 12:16:05 | Delete: ID - 1 removed image CWP -53).jpg 
+13-04-2016 12:16:06 | Delete: ID - 1 removed image linux debian 
+13-04-2016 12:16:07 | Delete: ID - 1 removed image 1 -134-.jpg 
+13-04-2016 12:16:07 | Delete: ID - 1 removed image CWP -48).jpg 
+13-04-2016 12:16:08 | Delete: ID - 1 removed image CWP -54).jpg 
+13-04-2016 12:16:10 | Delete: ID - 1 removed image lady abstract ren 2 
+13-04-2016 12:16:11 | Delete: ID - 1 removed image CWP -49).jpg 
+13-04-2016 12:16:12 | Delete: ID - 1 removed image CWP -50).jpg 
+13-04-2016 12:16:12 | Delete: ID - 1 removed image lorem  ipsum  laravel 
+13-04-2016 12:16:13 | Delete: ID - 1 removed image CWP -51).jpg 
+13-04-2016 12:16:14 | Delete: ID - 1 removed image 1 -153-.jpg 
+13-04-2016 12:16:14 | Delete: ID - 1 removed image CWP -42).jpg 
+13-04-2016 12:16:15 | Delete: ID - 1 removed image 1 -220-.jpg 
+13-04-2016 12:16:15 | Delete: ID - 1 removed image CWP (39).jpg 
+13-04-2016 12:16:15 | Delete: ID - 1 removed image 1 -53-.jpg 
+13-04-2016 12:16:16 | Delete: ID - 1 removed image 1 -184-.jpg 
+13-04-2016 12:16:17 | Delete: ID - 1 removed image CWP -45).jpg 
+13-04-2016 12:16:30 | Delete: ID - 1 removed image CWP -46).jpg 
+13-04-2016 12:17:17 | Upload: , ID - 1 added 12 new images. 
+13-04-2016 12:21:37 | Login: daniel logged in 
+13-04-2016 12:21:54 | Upload: daniel, ID - 3 added a new image 
+13-04-2016 12:27:24 | Rename: ID - 3 renamed image favourite hang spots 
+13-04-2016 13:53:06 | Upload: toness, ID - 2 added profile image 
+13-04-2016 13:53:06 | sign up: toness was added as an Admin 
+13-04-2016 13:53:45 | Upload: toness, ID - 2 added profile image 
+13-04-2016 13:53:45 | sign up: toness was added as an Admin 
+13-04-2016 13:59:01 | Upload: toness, ID - 2 added profile image 
+13-04-2016 13:59:01 | sign up: toness was added as an Admin 
+13-04-2016 14:00:32 | Upload: toness, ID - 2 had a failed upload. 
+13-04-2016 14:00:32 | sign up: toness was added as an Admin 
+13-04-2016 14:01:03 | Upload: toness, ID - 2 had a failed upload. 
+13-04-2016 14:01:03 | sign up: toness was added as an Admin 
+13-04-2016 14:01:52 | Upload: toness, ID - 2 added profile image 
+13-04-2016 14:01:52 | sign up: toness was added as an Admin 
+13-04-2016 14:02:48 | Upload: toness, ID - 2 added profile image 
+13-04-2016 14:02:48 | sign up: toness was added as an Admin 
+13-04-2016 14:03:34 | Login: daniel logged in 
+13-04-2016 14:06:22 | Upload: admin, ID - 4 added profile image 
+13-04-2016 14:06:22 | sign up: admin was added as an Admin 
+13-04-2016 14:29:16 | Delete: Anonymous's comment was removed 
+13-04-2016 14:33:13 | Delete: tlk a lot's comment was removed 
+13-04-2016 14:36:59 | Delete: Anonymous's comment was removed 
+13-04-2016 14:38:32 | Delete: Anonymous's comment was removed 
+13-04-2016 18:12:18 | Login: daniel logged in 
+13-04-2016 19:57:52 | Delete: Anonymous's comment was removed 

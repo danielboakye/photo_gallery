@@ -100,11 +100,11 @@ upload_max_filesize ==> 2M  -->
     	uploadAsync: false,
         uploadUrl: '/photo_gallery/public/admin/uploads.php', // you must set a valid URL here else you will get an error
         //allowedFileExtensions : ['jpg', 'png','gif', 'jpeg'],
-        maxImageWidth: 200,
-    	resizeImage: true,
+        // maxImageWidth: 200,
+    	// resizeImage: true,
         allowedFileTypes: ['image'],
         slugCallback: function(filename) {
-            return filename.replace('(', '-').replace(']', '-');
+            return filename.replace('(', '-').replace(')', '-');
         }
 	});
 

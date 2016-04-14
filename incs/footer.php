@@ -3,7 +3,14 @@
 
 			<div class="footer-left">
 
-				<h3>Ark Inc!<span> logo </span></h3>
+				<a class="" href="./">
+					<div style="width: 400px;">
+						<img src="<?= BASE_URL ?>img/monuments.png" class="img-responsive" style="float: left; margin-top: -.4em;">
+						<span style="padding-left: .2em; float: left;"><h3>rk Inc!</h3></span>
+					</div>
+				</a>
+
+				<br style="clear: both;">
 
 				<p class="footer-links">
 					<a href="#">Home</a>
@@ -29,12 +36,12 @@
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>+233 26 119 2456</p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@arkinc.com">support@ArkInc.com</a></p>
+					<p><a href="mailto:danielboakye98@yahoo.com">support@ArkInc.com</a></p>
 				</div>
 
 			</div>
@@ -48,10 +55,10 @@
 
 				<div class="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.facebook.com/daniel.boakye.165"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/danielboakye13"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/danielboakye"><i class="fa fa-github"></i></a>
 					<a href="#"><i class="fa fa-google-plus"></i></a>
 
 				</div>

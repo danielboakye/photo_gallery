@@ -78,7 +78,7 @@
 <div class="container" style="margin-top: 50px;">
 	<div class="row">
 		<div class="container">
-			<form method="GET" action="">
+			<form method="GET" action="manage_users.php">
 				<div class="input-group">
 					<input type="text" class="form-control" id="s-input" placeholder="Search for user in records" name="s">
 					<span class="input-group-btn">
@@ -121,12 +121,14 @@
 							<div class="row">
 
 								<!-- query image with that image	 -->
+								<?php $dp = Images::getProfileImg($user->id); ?>
 
-								<div class="col-md-3">
-									<img src="" data-src="holder.js/220x150/industrial" class="img-responsive">
+								<style type="text/css">.dp{ height: 100%; width: 100%; }</style>
+								<div class="col-md-3" style="height: 200px;">
+									<img src="<?= isset($dp->location) ? BASE_URL . "admin/" . $dp->location : ""; ?>" data-src="holder.js/250x200/industrial" class="img-responsive dp">
 									<!-- src = < ?= urlencode( image location ) ?> -->
 								</div>
-								<div class="col-md-9" style="line-height: 100%; padding-top: 3%;">
+								<div class="col-md-9" style="line-height: 100%; padding-top: 4%;">
 									<p>
 										<a href="edit_user.php?id=<?= $user->id; ?>"><button class="btn btn-success btn-group-justified">Edit 
 										<?= strtoupper(htmlentities($user->username)); ?>&rsquo;s details</button></a>

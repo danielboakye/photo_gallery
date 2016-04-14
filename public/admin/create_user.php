@@ -22,26 +22,16 @@
 
 	$db = new MySqlDatabase(); 
 	$user = new User();
+	$myImages = new Images();
 
 	if( $_POST )
 	{
-		$upload_errors = array(
-		    UPLOAD_ERR_OK => 'No Errors',
-		    UPLOAD_ERR_INI_SIZE => 'Larger than upload max size',
-		    UPLOAD_ERR_FORM_SIZE => 'Larger than form upload max size',
-		    UPLOAD_ERR_PARTIAL => 'Partial Upload',
-		    UPLOAD_ERR_NO_FILE => 'No file',
-		    UPLOAD_ERR_NO_TMP_DIR => 'No temp. directory',
-		    UPLOAD_ERR_CANT_WRITE => 'Cant write to disk',
-		    UPLOAD_ERR_EXTENSION => "file upload stopped by extension"
-		);
+		// $error = $_FILES['image']['error'];
 
-		$errors = $_FILES['image']['error'];
-
-		if(isset($errors) && $errors > 0){
-			$_SESSION['message'] = $upload_errors[$errors];
-			redirect_to("create_user.php");
-		}
+		// if(isset($errors) && $errors > 0){
+		// 	$_SESSION['message'] = $myImages->upload_errors[$error];
+		// 	redirect_to("create_user.php");
+		// }
 
 		//multiple inputs fields (a lot of them)
 		// $vars = $db->createQuery($_POST); //@returns an array
@@ -77,57 +67,36 @@
 			//=========================================================================
 
 			$username = User::getById($saved_user)->username;
-		
-			$success = null;
 
-			// get file names
-			$image = $_FILES['image'];
-			$filename[] = $image['name'];
-			$file = $filename[0];
+			//use Image class to upload image-profile picture
+			$myImages->attach_file($_FILES['image']);
 
-		    $ext = explode('.', basename($file));
-		    $uniqname = md5(uniqid());
-		    $uniqnames[] = $uniqname;
-		    $target = "uploads" . DS . $uniqname . "." . array_pop($ext);
-		    if(move_uploaded_file($image['tmp_name'], $target)) {
-		        $success = true;
-		        $path[] = $target;
-		    } else {
-		        $success = false;
-		        break;
+		    $saved = $myImages->process($saved_user, 1);
+		   
+		    $_SESSION['message'] = 'All files uploaded.';
+
+		    if($saved === false)
+		    { 
+		        $_SESSION['message'] = 'Error while saving images. Contact the system administrator';
+		        log_action('Upload', "{$username}, ID - {$saved_user} had a failed upload."); 
+		    }else{
+
+		        log_action('Upload', "{$username}, ID - {$saved_user} added profile image" );
 		    }
 
-		    if ($success) {
-
-			    //insert into database
-			    //use Image class
-			    $saved = Images::save_images($saved_user, $path, $filename, $uniqnames, 1);
-			   
-			    $_SESSION['message'] = 'All files uploaded.';
-			    if($saved === false)
-			    { 
-			        $_SESSION['message'] = 'Error while saving images. Contact the system administrator';
-			        log_action('Upload', "{$username}, ID - {$session->user_id} had a failed upload."); 
-			    }else{
-
-			        log_action('Upload', "{$username}, ID - {$session->user_id} added profile image" );
-			    }
-
-			} elseif ($success === false) {
-			    $_SESSION['message'] = 'Error while uploading image. Contact the system administrator';
-			    // delete any uploaded files			   
-			       unlink($path);
-
-			} else {
-			   $_SESSION['message'] = 'No files were processed.';
-			}
 			
 			//============================================================================
 
 			$end = ($logspec) ? "an Admin" : "user";
 			log_action('sign up', "{$user->username} was added as " . $end );
-			$_SESSION['message'] = ucfirst($user->username) . "'s info was added to the records successfully";
+			$_SESSION['message'] .= "\n" . ucfirst($user->username) . "'s info was added to the records successfully";
+
+			foreach ($myImages->errors as $error ) {
+				$_SESSION['message'] .= "\n" . $error;
+			}
+
 			redirect_to("create_user.php");
+
 		}else{
 			$_SESSION['message'] = "OOps! Something went wrong when we tried to create new user";	
 		}
@@ -217,7 +186,7 @@
 
                     	<div class="fileinput fileinput-new" data-provides="fileinput">
 						  <div class="fileinput-new thumbnail" style="width: 250px; height: 200px;">
-						    <img data-src="holder.js/250x300/industrial" alt="...">
+						    <img data-src="holder.js/250x200/industrial" alt="...">
 						  </div>
 						  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
 						  <div>
@@ -241,7 +210,10 @@
 <script type="text/javascript" src="<?= BASE_URL ?>js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?= BASE_URL ?>js/jasny-bootstrap.min.js"></script>
 <script src="<?= BASE_URL ?>js/jquery.easing.min.js" type="text/javascript"></script> 
+
+<!-- Jansy bootstrap fileinput JS -->
 <script type="text/javascript">$('.fileinput').fileinput();</script>
+
 <script type="text/javascript" src="<?= BASE_URL ?>js/plugins/holder.min.js"></script>
 <script>
 $(function() {

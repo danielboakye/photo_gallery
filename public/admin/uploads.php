@@ -57,7 +57,7 @@ for($i=0; $i < count($filenames); $i++){
     $ext = explode('.', basename($filenames[$i]));
     $uniqname = md5(uniqid());
     $uniqnames[] = $uniqname;
-    $target = "uploads" . DS. $uniqname . "." . array_pop($ext);
+    $target = "uploads/" . $uniqname . "." . array_pop($ext);
     if(move_uploaded_file($images['tmp_name'][$i], $target)) {
         $success = true;
         $paths[] = $target;
@@ -71,7 +71,7 @@ for($i=0; $i < count($filenames); $i++){
 if ($success) {
 
     //insert into database
-    $saved = Images::save_images($session->user_id ,$paths, $filenames, $uniqnames);
+    $saved = Images::saveAll($session->user_id ,$paths, $filenames, $uniqnames);
    
     $output = ['uploaded' => 'All files uploaded.'];
     if($saved === false)

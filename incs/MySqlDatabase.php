@@ -41,6 +41,11 @@ class MySqlDatabase
 		return $result;
 	}
 
+	public function sql($query, $bindings)
+	{
+		$stmt = $this->connection->prepare($query);
+		return $stmt->execute($bindings);
+	}
 
 	// @function in case you are using bindParam u can just loop through them
 		// bindParam binds values to variables so can only be of format variable = :value

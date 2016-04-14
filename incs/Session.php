@@ -10,11 +10,23 @@ class Session
 {
 	private $logged_in = false;
 	public $user_id;
+	public $message = "";
 	
 	public function __construct()
 	{
 		session_start();  //start session to make Session super global active
+		$this->checkMessage();
 		$this->checkLogin();
+	}
+
+	private function checkMessage()
+	{
+		if( isset( $_SESSION['message'] ) )
+		{
+			$this->message = $_SESSION['message'];
+			// unset($_SESSION['message']);    //commented out cos already using $_SESSION super global on my view page
+			// next time use the public class variable for display 
+		}
 	}
 
 	public function login($user)
@@ -22,6 +34,17 @@ class Session
 		if($user){
 			$this->user_id = $_SESSION['user_id'] = $user->id;
 			$this->logged_in = true;
+		}
+	}
+
+	public function message($msg="")
+	{
+		if(!empty($msg)){
+
+			$_SESSION['message'] = $msg;
+		}else{
+			
+			return $this->message;
 		}
 	}
 

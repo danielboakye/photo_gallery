@@ -60,7 +60,11 @@ class DatabaseObject
 		$result = $db->insertQuery($query, $bindings);
 
 		//revert private $make_admin back to 0
-		$this->revokeAdmin();
+		if(in_array("password", $attributes))
+		{
+			$this->revokeAdmin();
+		}
+		
 
 		if($result){
 			$this->id = $result;

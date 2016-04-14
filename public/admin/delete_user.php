@@ -30,10 +30,15 @@
 
 	if(empty($user)){ redirect_to("manage_users.php"); }
 
-	if($user->delete())
+	if( intval($session->user_id) !== intval($user->id) ) 
 	{
-		$message = $user->username .  " was removed";
-		unset($user);
+		if($user->delete())
+		{
+			$message = $user->username .  " was removed";
+			unset($user);
+		}
+	}else{
+		$message = $user->username .  " is still logged in. \n Sign in with a different user and try again";
 	}
 	
  ?>
@@ -57,7 +62,7 @@
 	        </div>
 	        <div class="col-md-11">
 	            <h2 class="modal-title">
-					<p><?= isset($message) ? htmlentities($message) : "Deleted"; ?></p>
+					<p><?= isset($message) ? nl2br(htmlentities($message)) : "Deleted"; ?></p>
 				</h2>
 	        </div>
 	    </div>

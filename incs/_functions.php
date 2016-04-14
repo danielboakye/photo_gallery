@@ -50,6 +50,12 @@ function log_action($action, $message = "")
 
 }
 
+function clean_date($date_time="")
+{
+	$unixdatetime = strtotime($date_time);
+	return strftime("%B %d, %Y at %I:%M %p", $unixdatetime);
+}
+
 // function diverse_array($vector) 
 // {
 //     $result = array();
