@@ -4,6 +4,7 @@
  	<meta charset="utf-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Boakye Daniel Kojo">
  	<title>Photo Gallery</title>
  	<link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>css/bootstrap.min.css">
  	<link rel="stylesheet" type="text/css" href="<?= BASE_URL ?>css/font-awesome.min.css">
@@ -28,7 +29,7 @@
 				</button>
 
 				<!-- actual links -->
-				<a class="navbar-brand" href="./">
+				<a class="navbar-brand" href="<?= BASE_URL ?>">
 					<div>
 						<img src="<?= BASE_URL ?>img/logo.png" class="img-responsive" style="margin-top: -.2em; float: left;">
 						<span style="padding-left: .2em; float: right;">rk Inc!</span>
@@ -39,9 +40,8 @@
 			<!-- navigation -->
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#section-gallery">Gallery</a></li>
-					<li><a href="#section-faq">F.A.Q.</a></li>
-					<li><a href="#section-contact">Contact</a></li>
+					<li><a href="<?= BASE_URL ?>">Gallery</a></li>
+					<li><a href="<?= BASE_URL ?>contact/">Contact</a></li>
 				</ul> 	
 			</div>
 		</div>

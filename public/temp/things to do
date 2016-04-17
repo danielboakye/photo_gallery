@@ -1,2 +1,0 @@
-During insert on sign up check to make sure the choosen username is not already in the db
-else during loging more dan one usernam could be queried and that will break this particular code

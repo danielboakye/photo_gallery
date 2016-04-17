@@ -129,6 +129,25 @@ class Images extends DatabaseObject
 		return !empty($result) ? $result : false;
 	}
 
+	public static function getPublicPages($per_page, $offset)
+	{
+		$query = "SELECT * FROM images WHERE is_profile = 0 LIMIT :per_page OFFSET :num";
+		$bindings = array('per_page' => (int)$per_page, 'num' => (int)$offset);
+
+		global $db;
+		$result = $db->query_BindInt($query, $bindings);
+
+		$object_array = array();
+		if($result)
+		{
+			foreach ($result as $row){
+				array_push($object_array, self::instantiate($row));
+			}
+		}
+		$result = (count($object_array) > 0) ? $object_array : false;
+		return !empty($result) ? $result : false;
+	}
+
 	public function rename()
 	{
 		global $db;
@@ -191,6 +210,15 @@ class Images extends DatabaseObject
 		** After deleting the instance of this Image still exists so you can do something like 
 		** echo $this->caption was removed successfully or something eventhough it will not be in the db
 		*/ 
+	}
+
+	public static function countAll()
+	{
+		global $db;
+		$query = "SELECT COUNT(*) AS total FROM images WHERE is_profile = 0";
+		$result = $db->query( $query, array() );
+		
+		return $result ? (int)$result->fetch()['total'] : 0;
 	}
 
 

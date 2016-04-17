@@ -39,6 +39,22 @@ class MySqlDatabase
 		$result = ($stmt->rowCount() > 0) ? $stmt : false;
 		$this->confirm_result($result);
 		return $result;
+
+
+		//run returned variable->fetchAll() on all queries that are not instantiated 
+		// like the count(*)
+	}
+
+	public function query_BindInt($query, $bindings)
+	{
+		$stmt = $this->connection->prepare($query);
+		foreach ($bindings as $key => &$val) 
+		{
+  		    $stmt->bindParam($key, intval($val), PDO::PARAM_INT);
+		}
+		$stmt->execute();
+		$result = ($stmt->rowCount() > 0) ? $stmt : false;
+		return $result;
 	}
 
 	public function sql($query, $bindings)

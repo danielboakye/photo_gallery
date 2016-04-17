@@ -34,30 +34,30 @@
 		// }
 
 		//multiple inputs fields (a lot of them)
-		// $vars = $db->createQuery($_POST); //@returns an array
+		$vars = $db->createQuery($_POST); //@returns an array
 		// Output Array 
 		// (
 		//     [0] => username, password, new
 		//     [1] => :username, :password, :new
 		// )
 
-		// $query = "INSERT INTO temp ($vars[0]) VALUES ($vars[1])";
+		$query = "INSERT INTO temp ($vars[0]) VALUES ($vars[1])";
 		
-		// $db->insertQuery($query, $_POST);
+		$db->insertQuery($query, $_POST);
 
-		$user->username = trim(htmlspecialchars($_POST['username']));
-		$user->password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-		$user->first_name = trim(htmlspecialchars($_POST['first_name']));
-		$user->last_name = trim(htmlspecialchars($_POST['last_name']));
-		$make_admin = intval($_POST['bool']);
+		// $user->username = trim(htmlspecialchars($_POST['username']));
+		// $user->password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+		// $user->first_name = trim(htmlspecialchars($_POST['first_name']));
+		// $user->last_name = trim(htmlspecialchars($_POST['last_name']));
+		// $make_admin = intval($_POST['bool']);
 
-		if($make_admin === 1){
-			$user->upgradeToAdmin();
-			$logspec = true;
-		}else{
-			$user->revokeAdmin();
-			$logspec = false;
-		}
+		// if($make_admin === 1){
+		// 	$user->upgradeToAdmin();
+		// 	$logspec = true;
+		// }else{
+		// 	$user->revokeAdmin();
+		// 	$logspec = false;
+		// }
 
 		// check if username already exits in the database the send error message and redirect_to(create user )
 

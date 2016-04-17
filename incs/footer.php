@@ -3,7 +3,7 @@
 
 			<div class="footer-left">
 
-				<a class="" href="./">
+				<a class="" href="<?= BASE_URL ?>">
 					<div style="width: 400px;">
 						<img src="<?= BASE_URL ?>img/monuments.png" class="img-responsive" style="float: left; margin-top: -.4em;">
 						<span style="padding-left: .2em; float: left;"><h3>rk Inc!</h3></span>
@@ -13,15 +13,13 @@
 				<br style="clear: both;">
 
 				<p class="footer-links">
-					<a href="#">Home</a>
-					·
-					<a href="#">Blog</a>
+					<a href="<?= BASE_URL ?>">Home</a>
 					·
 					<a href="#">About</a>
 					·
 					<a href="#">Faq</a>
 					·
-					<a href="#">Contact</a>
+					<a href="<?= BASE_URL ?>contact/">Contact</a>
 				</p>
 
 				<p class="footer-company-name">Ark Inc! &copy; <?= date('Y', time()); ?></p>
