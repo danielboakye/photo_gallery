@@ -14,7 +14,7 @@ require_once( ROOT_PATH . "incs/Images.php");
 $db = new MySqlDatabase();
 
 $page = !empty($_GET['pg']) ? intval($_GET['pg']) : 1;
-$page = ( isset($page) && $page === 0 ) ? 1 : $page; 
+$page = ( isset($page) && $page < 1 ) ? 1 : $page; 
 
 $per_page = 10;
 $total_count = Images::countAll();
