@@ -110,6 +110,4 @@
   </div> <!-- wrapper -->
 
 <?php include( ROOT_PATH . "incs/footer.php"); ?>
-<script type="text/javascript" src="<?= BASE_URL ?>js/jquery.validationEngine.js"></script>
-<script type="text/javascript" src="<?= BASE_URL ?>js/jquery.validationEngine-en.js"></script>
 <?php $_SESSION['message'] = "";  ?>
